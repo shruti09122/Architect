@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(8, 7, 8, 0.959);
+    color: white;
+}
+
+nav{
+    height: 3rem;
+    background-color: #1313134b;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#bars{
+    display: none;
+}
+
+nav h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+#about{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left h1{
+    color: black;
+    background-color: white;
+    /* font-size: 2.3rem; */
+    border-radius: 0.8rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    /* font-weight: ; */
+    padding: 1rem;
+    flex-wrap: wrap;
+    /* background-color: #13131375; */
+    /* border-radius: 0.8rem; */
+    /* color: white; */
+    /* margin-right: 30rem; */
+}
+
+.about-rigth{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-rigth img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.about-left p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.about-left h2{
+    margin-top: 1.5rem;
+    padding: 1.5;
+    height: 1.5;
+    font-size: 2rem;
+    background-color: rgba(255, 153, 0, 0.603);
+    letter-spacing: 0.8rem;
+}
+
+#servics{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 20rem;
+    padding: 1rem;
+    background-color: #131313;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.done{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 30rem;
+    /* background-color: #131313; */
+    align-content: space-evenly;
+    border-radius: 50%;
+    letter-spacing: 0.8rem;
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    nav h1{
+        font-size: 1.2rem;
+    }
+    #about{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left,.about-rigth{
+        width: 100%;
+    }
+    .rigth{
+        display: none;
+    }
+    #bars{
+        display: flex;
+    }
+    .about-left h1{
+        font-size: 1rem;
+        margin-top: 6rem;
+        padding: 2rem;
+    }
+
+    .about-left p{
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    .about-left h2{
+        font-size: 1.5rem ;
+        letter-spacing: normal;
+        margin-left: 0.8rem;
+    }
+
+    .about-rigth img{
+        width: 15rem;
+        margin-left: 2.5rem;
+        margin-top: 7rem;
+    }
+
+    i{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .done{
+        display: flex;
+        /* margin: 1rem; */
+    }
+}
